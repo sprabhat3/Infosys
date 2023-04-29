@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.master.cs" Inherits="Infosys.Default" %>
+
+<%@ Register Src="~/Header.ascx" TagName="head" TagPrefix="asp" %>
+<%@ Register Src="~/Footer.ascx" TagName="foot" TagPrefix="asp" %>
+
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <script src="jquery.js"></script>
+        <link href="menu.css" rel="stylesheet" />
+        <script src="menu.js"></script>
+        <div>
+            <center><table>
+                <tr>
+                    <td>
+                        <asp:head id="h1" runat="server"></asp:head>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><div id="menu">
+                            <ul class="menu">
+                                <li><a href="RegistrationForm.aspx"><span>Employee Registration</span></a></li>
+                               
+                            </ul> </div></td>
+                </tr>
+                <tr>
+
+                    
+                        <td><center>
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder></center>
+                        </td>
+                    
+                </tr>
+
+                <tr>
+                    <td>
+                        <asp:foot id="f1" runat="server"></asp:foot>
+                    </td>
+                </tr>
+            </table></center>
+
+        </div>
+    </form>
+</body>
+</html>
